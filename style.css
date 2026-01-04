@@ -33,7 +33,7 @@ h1 a:hover {
 	text-decoration: underline;
 }
 #pageTitle {
-	margin 0 auto;
+	margin: 0 auto;
 }
 #main {
 	float: left;

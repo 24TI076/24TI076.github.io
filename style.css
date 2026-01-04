@@ -6,7 +6,7 @@ body {
 	background-color: #005905;//背景
 }
 #outer {
-	margin: 20 auto;
+	margin: 0 auto;
 	width: 980px;
 	background-color: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);

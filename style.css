@@ -32,6 +32,9 @@ h1 a:hover {
 	color: #800000;
 	text-decoration: underline;
 }
+#pageTitle {
+	margin 0 auto;
+}
 #main {
 	float: left;
 	width: 70%;

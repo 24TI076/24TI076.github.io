@@ -1,38 +1,150 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>shingenTopPage</title>
-  <meta name="keywords" content="ページのキーワード">
-  <meta name="description" content="ページの説明">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="outer">
-    <div id="inner">
-      <div id="container">
-        <div id="pageTitle">
-          <h2>森厳-shingen-</h2>
+    <head>
+        <!-- メタ情報 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Morintyu_top</title>
+        
+        <!-- 外部ファイルの読み込み -->
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- 背景の泡アニメーション -->
+        <div class="bubbles-container">
+            <div class="bubble bubble-1"></div>
+            <div class="bubble bubble-2"></div>
+            <div class="bubble bubble-3"></div>
+            <div class="bubble bubble-4"></div>
+            <div class="bubble bubble-5"></div>
+            <div class="bubble bubble-6"></div>
+            <div class="bubble bubble-7"></div>
+            <div class="bubble bubble-8"></div>
         </div>
-        <div id="main">
-          <p>〇森厳   ---秩序正しくおごそかなこと。きわめて厳粛なさま。</p>
-          <h3>about</h3>
-          <p>雑多なサイトです。いろいろ気になったものを集めています。備忘録的な側面もあります。</p>
-        </main>
-      </div>
-      <aside>
-        <div class="side-title">menu</div>
-          <div class="side">
-            <ul>
-              <li><a href="https://24ti076.github.io/aboutme">about me</a></li>
-              <li><a href="#">使っている本たち</a></li>
-              <li><a href="#">ライフゲーム？</a></li>
-            </ul>
-          </div>
+        <!-- メインコンテナ -->
+        <div class="main">
+            <!-- ============================================ -->
+            <!-- ナビゲーションバー -->
+            <!-- ============================================ -->
+            <nav>
+                <div class="logo-area">
+                    <img src="./images/logo.png" alt="" height="100vh" class="title-logo">
+                    <h2>森人-morintyu-</h2>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <a href="#about"><li>About</li></a>
+                        <a href="#books"><li>Books</li></a>
+                        <a href="#codes"><li>Codes</li></a>
+                        <a href="#diary"><li>Dialy</li></a>
+                    </ul>
+                </div>
+            </nav>
+            <!-- ============================================ -->
+            <!-- スライドショーセクション -->
+            <!-- ============================================ -->
+            <div class="big-box" id="pictures">
+                <div class="slide-box">
+                    <!-- スライド画像 -->
+                    <div id="slide" class="slide">
+                        <div>
+                            <img src="./images/slide1.jpeg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/slide2.jpeg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/slide3.jpeg" alt="">
+                        </div>
+                    </div>
+                    <!-- 前へボタン -->
+                    <span id="prev" class="prev"></span>
+                    <!-- 次へボタン -->
+                    <span id="next" class="next"></span>
+                    <!-- スライドインジケーター（現在のスライドを表示） -->
+                    <ul class="indicator" id="indicator">
+                        <li class="list"></li>
+                        <li class="list"></li>
+                        <li class="list"></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ============================================ -->
+            <!-- Aboutセクション（自己紹介） -->
+            <!-- ============================================ -->
+            <div class="big-box" id="about">
+                <div class="article">
+                     <div class="title">
+                        <h1>About</h1>
+                        <!-- プロフィール情報 -->
+                        <div class="mini-title">
+                            <h2>プロフィール</h2>
+                            <p>20歳。学生。現在、大学の情報工学科にて情報技術について学習中。</p>
+                            <p>猫とネット小説が好き。猫カフェ巡り中。</p>
+                        </div>
+                        <!-- サイト情報 -->
+                        <div class="mini-title">
+                            <h2>サイトについて</h2>
+                            <p>2026.01.05から作成。各種のサイトを参考に、AI等を用いて作成。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================ -->
+            <!-- Booksセクション（読んだ本の紹介） -->
+            <!-- ============================================ -->
+            <div class="big-box" id="books">
+                <div class="article">
+                    <div class="title">
+                        <h1>Books</h1>
+                        <div class="mini-title">
+                            <p>ここでは、読んだ本をいくつか紹介します。</p>
+                        </div>
+                        <!-- JavaScriptでbooks/list.jsonから読み込んだ本の情報がここに表示される -->
+                        <div id="books-container">
+                            <!-- ここにJavaScriptで本の情報を動的に追加-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================ -->
+            <!-- Codesセクション（過去に書いたコードの紹介） -->
+            <!-- ============================================ -->
+            <div class="big-box" id="codes">
+                <div class="article">
+                     <div class="title">
+                        <h1>Codes</h1>
+                        <div class="mini-title">
+                            <p>ここでは、過去に書いたコードを紹介します。tab揃えしているのでインデントがおかしいかもしれないです。</p>
+                        </div>
+                        <!-- JavaScriptでcodes/list.jsonから読み込んだコードがここに表示される -->
+                        <div id="codes-container">
+                            <!-- ここにJavaScriptでコードの情報を動的に追加-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================ -->
+            <!-- Diaryセクション（日記） -->
+            <!-- ============================================ -->
+            <div class="big-box" id="diary">
+                <div class="article-bot">
+                     <div class="title">
+                        <h1>Diary</h1>
+                        <!-- JavaScriptでdialies/list.jsonから読み込んだ日記がここに表示される -->
+                        <div id="diary-container">
+                            <!-- ここにJavaScriptで日記の情報を動的に追加-->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </aside>
-      <footer>ここには何もないよ</footer>
-    </div>
-  </div>
-</body>
+    </body>
+    <!-- ============================================ -->
+    <!-- フッター（ページトップボタン） -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <button id="pagetop" class="pagetop-btn" aria-label="ページトップへ戻る"></button>
+    </footer>
+</html>

@@ -265,9 +265,9 @@ const diaryContainer = document.getElementById('diary-container');
 
 // 関数
 async function loadDiary() {
-    // dialiesディレクトリ内のlist.jsonからファイルリストを取得
+    // diariesディレクトリ内のlist.jsonからファイルリストを取得
     try {
-        const listResponse = await fetch('./dialies/list.json');
+        const listResponse = await fetch('./diaries/list.json');
         if (!listResponse.ok) {
             diaryContainer.innerHTML = '<div class="mini-title"><p>list.jsonファイルが見つかりませんでした。</p></div>';
             return;
@@ -284,7 +284,7 @@ async function loadDiary() {
 
         for (const fileName of sortedFiles) {
             try {
-                const response = await fetch(`./dialies/${fileName}`);
+                const response = await fetch(`./diaries/${fileName}`);
                 if (!response.ok) {
                     console.warn(`ファイル ${fileName} が見つかりませんでした`);
                     continue;

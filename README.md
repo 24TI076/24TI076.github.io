@@ -7,19 +7,19 @@
 このプロジェクトは、HTML/CSS/JavaScriptを使用した静的な個人ホームページです。
 
 ## プロジェクト構造
-
+<div>
 24TI076.github.io/
-├── index.html          # メインHTMLファイル<br>
-├── style.css           # スタイルシート<br>
-├── script.js           # JavaScript機能<br>
-├── images/             # 画像ファイル（ロゴ、スライド画像など）<br>
-├── books/              # 読んだ本のリスト<br>
-│   └── list.json       # 本のリストデータ<br>
-├── codes/              # コードサンプル<br>
-│   └──list.json        # コードリストデータ<br>
-└── diaries/            # 日記<br>
-    └── list.json       # 日記リストデータ<br>
-
+├── index.html          # メインHTMLファイル
+├── style.css           # スタイルシート
+├── script.js           # JavaScript機能
+├── images/             # 画像ファイル（ロゴ、スライド画像など）
+├── books/              # 読んだ本のリスト
+│   └── list.json       # 本のリストデータ
+├── codes/              # コードサンプル
+│   └──list.json        # コードリストデータ
+└── diaries/            # 日記
+    └── list.json       # 日記リストデータ
+<\div>
 ## 主な機能
 
 ### 1. スライドショー

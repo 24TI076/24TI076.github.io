@@ -14,11 +14,11 @@
 ├── script.js           # JavaScript機能\
 ├── images/             # 画像ファイル（ロゴ、スライド画像など）\
 ├── books/              # 読んだ本のリスト\
-│   └── list.json       # 本のリストデータ\
+│&ensp;&ensp;&ensp;└── list.json       # 本のリストデータ\
 ├── codes/              # コードサンプル\
-│   └──list.json        # コードリストデータ\
+│&ensp;&ensp;&ensp;└──list.json        # コードリストデータ\
 └── diaries/            # 日記\
-    └── list.json       # 日記リストデータ
+&ensp;&ensp;&ensp;&ensp;└── list.json       # 日記リストデータ
 
 ## 主な機能
 

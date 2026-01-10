@@ -8,7 +8,7 @@
 
 ## プロジェクト構造
 
-24TI076.github.io/
+24TI076.github.io/\
 ├── index.html          # メインHTMLファイル\
 ├── style.css           # スタイルシート\
 ├── script.js           # JavaScript機能\
@@ -18,7 +18,7 @@
 ├── codes/              # コードサンプル\
 │   └──list.json        # コードリストデータ\
 └── diaries/            # 日記\
-    └── list.json       # 日記リストデータ\
+    └── list.json       # 日記リストデータ
 
 ## 主な機能
 
